@@ -18,3 +18,7 @@ class Questions:
     sixth_answer = By.ID, "accordion__panel-5"
     seventh_answer = By.ID, "accordion__panel-6"
     eighth_answer = By.ID, "accordion__panel-7"
+    logo_scooter = By.XPATH, "//*[@class='Header_LogoScooter__3lsAR']"
+    logo_yandex = By.XPATH, "//*[@class='Header_LogoYandex__3TSOI']"
+    title_scooter = By.XPATH, "//div[contains(@class, 'Home_Header')]"
+    list_of_question = By.CLASS_NAME, "accordion"

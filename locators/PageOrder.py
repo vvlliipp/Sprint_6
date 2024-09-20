@@ -15,10 +15,8 @@ class Order:
     rental_field = By.XPATH, "//div[contains(@class, 'Dropdown-placeholder') and text()='* Срок аренды']"
     rental_period = By.XPATH, "//div[@class='Dropdown-option' and text()='сутки']"
     black_pearl = By.XPATH, "//input[@id='black']"
-    gray_hopelessness = By.XPATH, "//input[@id='grey']"
     comment_field = By.XPATH, "//input[@placeholder='Комментарий для курьера']"
     button_order = By.XPATH, ".//div[3]/button[2]"
     order_confirmation = By.XPATH, "//button[text() = 'Да']"
     view_status = By.XPATH, "//button[text()='Посмотреть статус']"
-    logo_scooter = By.XPATH, "//*[@class='Header_LogoScooter__3lsAR']"
-    logo_yandex = By.XPATH, "//*[@class='Header_LogoYandex__3TSOI']"
+
