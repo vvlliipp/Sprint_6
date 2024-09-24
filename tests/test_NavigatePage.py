@@ -1,4 +1,3 @@
-import pytest
 from pages.page_Questions import PageQuestions
 from data import Url
 

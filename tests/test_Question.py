@@ -4,7 +4,7 @@ from locators.PageQuestions import Questions
 from pages.page_Questions import PageQuestions
 
 
-class TestQuestion():
+class TestQuestion:
     @pytest.mark.parametrize('question, answer, expected_answer',
     [
         [Questions.first_question, Questions.first_answer, Answer.ANSWER_1],
@@ -20,7 +20,7 @@ class TestQuestion():
         page = PageQuestions(driver)
         page.open_page(Url.PAGE_SCOOTER)
         page.click_cookies()
-        page.scroll_to_list_question()
+        page.scroll_to_element(Questions.list_of_question)
         page.click_element(question)
         actual_answer = page.get_element_text(answer)
         assert actual_answer == expected_answer
